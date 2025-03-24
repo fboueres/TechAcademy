@@ -15,7 +15,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ route("home") }}">
+                    <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="{{ route("home") }}"
+                    >
                         Home
                     </a>
                 </li>
@@ -31,9 +35,21 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a class="dropdown-item" href="#">Cursos</a>
+                            <a
+                                class="dropdown-item"
+                                href="{{ route("cursos.index") }}"
+                            >
+                                Cursos
+                            </a>
                         </li>
-                        <li><a class="dropdown-item" href="#">Novo Curso</a></li>
+                        <li>
+                            <a
+                                class="dropdown-item"
+                                href="{{ route("cursos.create") }}"
+                            >
+                                Novo Curso
+                            </a>
+                        </li>
                     </ul>
                 </li>
             </ul>

@@ -11,7 +11,9 @@
     </head>
     <body>
         @include("partials.navbar")
-        @section("content")
-        @show
+        <section class="container mx-auto">
+            @section("content")
+            @show
+        </section>
     </body>
 </html>
